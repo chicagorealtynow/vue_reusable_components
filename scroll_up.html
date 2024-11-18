@@ -1,6 +1,23 @@
 <!-- ~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~~-->
-<a href="#" class="fixed right-4 bottom-4 bg-yellow-500 shadow-sm
+<a href="#" class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm
 inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50
 hover:-translate-y-1 duration-300" id="scroll-up">
 	<i class="ri-arrow-up-line"></i>
 </a>
+
+<style>
+html {
+	@apply overflow-x-hidden scroll-smooth;
+}
+
+main.js
+<!--~~~~~~~~~~~~~~~ Show Scroll Up ~~~~~~~~~~~~~~~~~-->
+const scrollUp = () => {
+	if(this.scrollY >=250) {
+		scrollUpBtn.classList.remove("-bottom-1/2")
+		scrollUpBtn.classList.add("bottom-4")
+		} else {
+				scrollUpBtn.classList.remove("-bottom-1/2")
+				scrollUpBtn.classList.add("bottom-4")
+		}
+	}
